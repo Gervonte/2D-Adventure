@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/array2DClass.js"></script>
+    <script src="js/mazeObjectClass.js"></script>
+    <script src="js/brickClass.js"></script>  
+    <script src="js/treeClass.js"></script>   
+    <script src="js/characterClass.js"></script>  
+    <script src="js/playerClass.js"></script>    
+    <script src="js/monster1Class.js"></script> 
+    <script src="js/monster2Class.js"></script> 
+    <script src="js/monster3Class.js"></script> 
+    <script src="js/gameControlClass.js"></script> 
+    <script src="js/healthBarClass.js"></script> 
+    <script src="js/potionClass.js"></script> 
+    <script src="js/potionBlueClass.js"></script> 
+    
+    <title>Gervonte Fowler|2D Adventure</title>
+
+
+    <!-- main function -->
+    <script>
+        function main()
+        {
+            window.onload = function()
+                {
+                    var gameController = new gameControl(64,64,640,640);
+                    gameController.startGame();  
+                }
+        }
+    </script>
+</head>
+<body>    
+    
+    <IMG src="img/player.png" alt="player" style="display:none;" id="player"/>
+    <IMG src="img/enemy_rat.png" alt="rat" style="display:none;" id="rat"/>
+    <IMG src="img/enemy_bat.png" alt="bat" style="display:none;" id="bat"/>
+    <IMG src="img/enemy_slime.png" alt="slime" style="display:none;" id="slime"/>
+    <IMG src="img/potion.png" alt="potion" style="display:none;" id="potion"/>
+    <IMG src="img/potion2.png" alt="potion" style="display:none;" id="potion2"/>
+    
+    <canvas id = "mainCanvas" width = "640" height = "640" style = "border:1px solid black">Your Web-Browser does not support Canvas</canvas>
+    <div>
+        <button type="button" id ="upBtn">Up</button>  
+        <button type="button" id="downBtn">Down</button> 
+        <button type="button" id="leftBtn">Left</button> 
+        <button type="button" id="rightBtn">Right</button> 
+    </div> 
+    <script>
+        main(); 
+    </script> 
+
+</body>
+</html>
