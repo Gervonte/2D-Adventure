@@ -37,7 +37,7 @@ class gameControl
     }
     drawBg()
     {
-        this.ctx.fillStyle = "#225500";
+        this.ctx.fillStyle = "#222200";
         this.ctx.fillRect(0,0,this.width,this.height);
         this.array2d.rePopGrid();
     }

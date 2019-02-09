@@ -19,7 +19,7 @@ class character
     draw()
     { 
         this.controller.ctx;
-        this.controller.ctx.clearRect(this.X*64,this.Y*64,64,64);
+        //this.controller.ctx.clearRect(this.X*64,this.Y*64,64,64);
         this.controller.ctx.drawImage(this.PIC,this.X*64,this.Y*64);
         this.healthBar1.draw((this.X*64)+55,(this.Y*64)+2,this.HP,this.controller.ctx);        
                  

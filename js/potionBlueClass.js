@@ -13,7 +13,7 @@ class potionBlue
     draw()
     {
         
-        this.controller.ctx.clearRect(this.X*64,this.Y*64,64,64);
+        //this.controller.ctx.clearRect(this.X*64,this.Y*64,64,64);
         this.controller.ctx.drawImage(this.PIC,this.X*64,this.Y*64);        
     }
 
